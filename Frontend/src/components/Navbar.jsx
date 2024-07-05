@@ -28,7 +28,7 @@ function Navbar() {
         <a href="/">Home</a>
       </li>
       <li>
-        <a href="/book">Books</a>
+        <a href="/books">Books</a>
       </li>
       <li>
         <a href="#">Contact</a>
