@@ -7,15 +7,12 @@ import Cards from "./Cards";
 // import list from "../assets/list.json";
 
 function Freebook() {
-  // const fillterData = list.filter((data) => data.price === 0);
-
-  // console.log(fillterData);
 
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get("https://bookstoreapp-fd66.onrender.com/book");
 
         const data = res.data.filter((data) => data.category === "Free");
         // console.log(data);
