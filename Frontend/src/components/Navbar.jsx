@@ -6,22 +6,7 @@ import { useAuth } from "../context/AuthProvider";
 
 function Navbar() {
   const [authUser, setAuthUser] = useAuth();
-  // console.log(authUser);
-  // const [theme, setTheme] = useState(
-  //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-  // );
-  // const element = document.documentElement;
-  // useEffect(() => {
-  //   if (theme === "dark") {
-  //     element.classList.add("dark");
-  //     localStorage.setItem("theme", "dark");
-  //     document.body.classList.add("dark");
-  //   } else {
-  //     element.classList.remove("dark");
-  //     localStorage.setItem("theme", "light");
-  //     document.body.classList.remove("dark");
-  //   }
-  // }, [theme]);
+
 
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
@@ -43,7 +28,7 @@ function Navbar() {
         <a href="/">Home</a>
       </li>
       <li>
-        <a href="/books">Books</a>
+        <a href="/book">Books</a>
       </li>
       <li>
         <a href="#">Contact</a>
